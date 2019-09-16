@@ -1,0 +1,19 @@
+.main-menu {
+  list-style-type: none;
+  overflow: hidden;
+  &__item {
+    float: left;
+    & a {
+      display: block;
+      color: $main-color-white;
+      text-align: center;
+      margin: 2rem;
+      font-size: 2.5rem;
+      text-decoration: none;
+      transition: color 0.2s;
+      &:hover {
+        color: $main-color-black;
+      }
+    }
+  }
+}

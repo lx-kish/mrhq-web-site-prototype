@@ -1,4 +1,7 @@
 import React, { Component } from 'react';
+import '../../css/style.css';
+
+import Header from '../../components/header/header';
 
 class Layout extends Component {
 
@@ -9,9 +12,8 @@ class Layout extends Component {
     render() {
         return(
             <div>
-                header
+                <Header/>
                 {this.props.children}
-                footer
             </div>
         )
     }

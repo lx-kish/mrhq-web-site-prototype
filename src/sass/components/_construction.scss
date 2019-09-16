@@ -1,0 +1,39 @@
+.under-construction {
+  position: fixed;
+  margin: auto;
+  min-height: 100%;
+  width: 100%;
+  text-align: center;
+  color: $main-color-black;
+  background: url(../img/caution.jpg) no-repeat center 20% fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  &__sign {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -30%);
+
+    & h1 {
+      padding: 1rem;
+      font-size: 6rem;
+      font-weight: 900;
+      margin: auto;
+    }
+
+    & p {
+      padding: 1rem;
+      font-size: 4rem;
+      font-weight: 500;
+    }
+  }
+}

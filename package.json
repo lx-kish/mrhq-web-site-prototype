@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "concurrently": "^4.1.2",
     "react": "^16.9.0",
     "react-dom": "^16.9.0",
     "react-router-dom": "^5.0.1",
@@ -12,7 +13,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "compile:sass": "node-sass src/sass/main.scss src/css/style.css -w",
+    "start-dev": "concurrently --kill-others \"npm run compile:sass\" \"npm start\""
   },
   "eslintConfig": {
     "extends": "react-app"

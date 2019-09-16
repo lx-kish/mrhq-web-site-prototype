@@ -1,0 +1,173 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  font-size: 62.5%;
+  height: 100%; }
+
+body {
+  height: 100%;
+  box-sizing: border-box;
+  font-family: 'Noto Sans KR', Helvetica, Arial, sans-serif; }
+
+body {
+  font-size: 1.6rem; }
+
+.header {
+  background-color: #ff7436; }
+
+.main-menu {
+  list-style-type: none;
+  overflow: hidden; }
+  .main-menu__item {
+    float: left; }
+    .main-menu__item a {
+      display: block;
+      color: #fff;
+      text-align: center;
+      margin: 2rem;
+      font-size: 2.5rem;
+      text-decoration: none;
+      transition: color 0.2s; }
+      .main-menu__item a:hover {
+        color: #000; }
+
+.home-screen {
+  position: fixed;
+  min-height: 100%;
+  width: 100%;
+  background: url(../img/1.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; }
+  .home-screen:after {
+    content: "";
+    display: table;
+    clear: both; }
+  .home-screen__sign {
+    background-color: rgba(255, 255, 255, 0.5);
+    border: 1px solid transparent;
+    border-radius: 2.5rem;
+    margin: 10% auto;
+    width: 80%; }
+    .home-screen__sign h1 {
+      font-size: 6rem;
+      font-weight: 900; }
+  .home-screen__buttons {
+    width: 80%;
+    margin: auto; }
+
+.apply-screen {
+  position: fixed;
+  min-height: 100%;
+  width: 100%;
+  background: url(../img/2.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  overflow-y: scroll; }
+  .apply-screen:after {
+    content: "";
+    display: table;
+    clear: both; }
+  .apply-screen__header h1 {
+    width: 100%;
+    text-align: center;
+    font-size: 5rem;
+    font-weight: 900; }
+  .apply-screen__header p {
+    width: 75%;
+    margin: auto;
+    text-align: left;
+    font-size: 2.5rem;
+    font-weight: 500; }
+  .apply-screen__form {
+    width: 75%;
+    margin: auto; }
+    .apply-screen__form--input, .apply-screen__form--select {
+      font-size: 2rem;
+      font-family: inherit;
+      color: inherit;
+      padding: 0.5rem 2rem;
+      border-radius: 1rem;
+      background-color: #fff;
+      border: 1px solid rgba(0, 0, 0, 0.4);
+      width: 60%;
+      display: block;
+      margin-bottom: 1rem; }
+    .apply-screen__form--checkbox {
+      color: inherit;
+      padding: 0.5rem 2rem;
+      border-radius: 1rem;
+      background-color: #fff;
+      border: 1px solid rgba(0, 0, 0, 0.4);
+      height: 2.5rem;
+      width: 2.5rem;
+      margin-left: 2rem;
+      margin-bottom: 1rem; }
+    .apply-screen__form--button {
+      text-align: center;
+      margin: auto; }
+
+.btn {
+  background-color: #ff7436;
+  color: #fff;
+  border: 1px solid transparent;
+  border-radius: 1.2rem;
+  outline: none;
+  padding: 0.5rem 1rem;
+  font-size: 3rem;
+  font-weight: 900;
+  text-align: center;
+  vertical-align: middle;
+  display: inline-block;
+  transition: color 0.2s;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none; }
+  .btn:link, .btn:visited, .btn:hover, .btn:active {
+    text-decoration: none; }
+  .btn:hover {
+    color: #000;
+    cursor: pointer; }
+  .btn__gap--right {
+    margin-right: 2rem; }
+
+.under-construction {
+  position: fixed;
+  margin: auto;
+  min-height: 100%;
+  width: 100%;
+  text-align: center;
+  color: #000;
+  background: url(../img/caution.jpg) no-repeat center 20% fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; }
+  .under-construction:after {
+    content: "";
+    display: table;
+    clear: both; }
+  .under-construction__sign {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -30%); }
+    .under-construction__sign h1 {
+      padding: 1rem;
+      font-size: 6rem;
+      font-weight: 900;
+      margin: auto; }
+    .under-construction__sign p {
+      padding: 1rem;
+      font-size: 4rem;
+      font-weight: 500; }
